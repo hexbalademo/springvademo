@@ -1,0 +1,16 @@
+{
+  "extends": ["config:base"],
+  "dependencyDashboard": true,
+  "automerge": false,
+  "enabledManagers": ["terraform", "github-actions", "npm", "pip", "dockerfile"],
+  "packageRules": [
+    {
+      "matchManagers": ["terraform"],
+      "enabled": true
+    },
+    {
+      "matchManagers": ["npm", "pip", "dockerfile", "github-actions"],
+      "enabled": true
+    }
+  ]
+}
