@@ -39,8 +39,31 @@
     <spring-format.version>0.0.40</spring-format.version>
 
   </properties>
+  <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- <struts2.version>2.5.12</struts2.version> -->
+        <struts2.version>2.5.9-SNAPSHOT</struts2.version>
+        <log4j2.version>2.8.2</log4j2.version>
+    </properties>
+
 
   <dependencies>
+    <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-core</artifactId>
+            <version>${struts2.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <dependency>
+           <groupId>ognl</groupId>
+           <artifactId>ognl</artifactId>
+           <version>3.1.12</version>
+    </dependency>
     <!-- Spring and Spring Boot dependencies -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
